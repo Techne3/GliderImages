@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+
+    <ImageView
+
+        android:id="@+id/photo_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="2dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@color/design_default_color_error"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="This is what text looks like"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/photo_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/albumTv"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/photo_image"
+        app:layout_constraintTop_toBottomOf="@+id/titleTv" />
+
+    <TextView
+        android:id="@+id/urlTv"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/titleTv"
+        tools:layout_editor_absoluteY="70dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

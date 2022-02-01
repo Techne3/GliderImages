@@ -14,7 +14,7 @@ private val apiManager: ApiManager
         return try {
             val response = apiManager.getPhotos()
             if (response.isSuccessful) {
-                Log.v(TAG," ${response.isSuccessful}")
+                Log.v(TAG," HEEERRRREEEE IS IT SUCCESSFUL ${response.isSuccessful}")
                 Log.d(TAG," $response")
                 response.body()
             } else {
@@ -24,4 +24,5 @@ private val apiManager: ApiManager
             emptyList()
         }
     }
+
 }
